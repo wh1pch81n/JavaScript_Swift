@@ -1,0 +1,30 @@
+<html>
+	<head>
+	<script type='text/javascript'>
+		
+		function doSomething() {
+			window.location = "ios:doSomething";
+		};
+	
+		function doSomething1(num) {
+			window.location = "ios:doSomething?=" + num;
+		};
+		
+		function doSomething2(num,word) {
+			window.location = "ios:doSomething?=" + num + "&=" + word;
+		};
+	
+	</script>
+	</head>
+	<body>
+		<p>
+		<a href='javascript:doSomething();'>Click me</a> for fries
+		</p>
+		<p>
+		<a href='javascript:doSomething1(8);'>Click me</a> one num
+		</p>
+		<p>
+		<a href='javascript:doSomething2(27,"derrick");'>Click me</a> one num on word
+		</p>
+	</body>
+</html>
